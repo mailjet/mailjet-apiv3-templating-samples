@@ -1,6 +1,18 @@
-# Mailjet Template API use cases
+![alt text](http://cdn.appstorm.net/web.appstorm.net/files/2012/02/mailjet_logo_200x200.png "Mailjet")
 
-A few examples of the Mailjet Template API language.
+# Mailjet API V3 templating samples
+
+The samples leverage the Mailjet Templating language for Transactional Emailing. 
+
+##Documentation
+
+[Full guide for Mailjet Transactional templating](http://dev.mailjet.com/guides/#transactional-templating) 
+
+The Mailjet templating language offers : 
+ - [Data substitution](http://dev.mailjet.com/guides/#variables) with `{{ ... }}`
+ - [Conditional statements](http://dev.mailjet.com/guides/#conditional-statements):  `if`, `else`, `elseif` and `endif`
+ - [Loop statements](http://dev.mailjet.com/guides/#loop-statements): `for in` and `endfor`
+
 
 ##List of samples
 
@@ -9,5 +21,7 @@ A few examples of the Mailjet Template API language.
  - [Question / Answers / Comment notifications](question_answer/) : alerts for new question, comment and answer (Quandora like) with specific call to action depending on the alerts
  - [Ecommerce purchase steps](ecommerce/) : one template to handle all the purchasing communication to the clients
  - [White label](white_label/) : one template to handle multiple branding
+ - [RSS to email](rss_to_email/) : pull a RSS feed and send it by email (simple loop sample) 
+
 
 More to come soon, so come back ;) 
