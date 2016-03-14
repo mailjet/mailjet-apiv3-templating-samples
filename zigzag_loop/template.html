@@ -1,0 +1,18 @@
+<html>
+<body>
+<div style="background-color: white; color: black; padding-left: 10px; padding-right: 10px;">
+
+	<table>
+	{% for product in var:products %}
+		{% if (product.id mod 2) = 1 %}
+         	<tr><td><img src="{{product.img}}"></td><td style="background:{% if (product.id mod 3) = 1 %}#405260{% elseif (product.id mod 3) = 2 %}#ff5260{% else %}#4052ff{% endif %};">{{product.name}}<br>{{product.price}}</td></tr>
+		{% else %}
+		<tr><td style="background:{% if (product.id mod 3) = 1 %}#405260{% elseif (product.id mod 3) = 2 %}#ff5260{% else %}#4052ff{% endif %};">{{product.name}}<br>{{product.price}}</td><td><img src="{{product.img}}"></td></tr>
+		{% endif %}
+	{% endfor %}
+	</table>
+
+</div> 
+</body>
+</html>
+

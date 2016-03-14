@@ -1,6 +1,7 @@
 #RSS to EMAIL  
 
-This example show how with the loops you can repeat pieces of your template.
+This example shows how with the loops you can repeat pieces of your template. 
+This example download a RSS feed and push the articles information to the Mailjet Transational template.
 
 ## Vars 
 

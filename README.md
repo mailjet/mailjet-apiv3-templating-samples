@@ -22,6 +22,9 @@ The Mailjet templating language offers :
  - [Ecommerce purchase steps](ecommerce/) : one template to handle all the purchasing communication to the clients
  - [White label](white_label/) : one template to handle multiple branding
  - [RSS to email](rss_to_email/) : pull a RSS feed and send it by email (simple loop sample) 
+ - [Product list](products_list/) : simple product list 
+ - [Product list in zigzag](zigzag_loop/) : product list with alternative image side 
+ - [Ecommerce receipt](ecommerce_receipt/) : list of product purchased and total price of purchase
 
 
 More to come soon, so come back ;) 

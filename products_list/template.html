@@ -1,0 +1,19 @@
+<html>
+<body>
+<div style="background-color: white; color: black; padding-left: 10px; padding-right: 10px;">
+
+
+{% for line in var:products %}
+	<ul>
+	{% for product in line %}
+         <li><img src="{{product.img}}">{{product.name}}<br>{{product.price}}</li>
+	{% endfor %}
+	</ul>
+{% endfor %}
+
+
+
+</div> 
+</body>
+</html>
+
