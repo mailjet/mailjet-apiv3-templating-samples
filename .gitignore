@@ -1,2 +1,4 @@
 vendor/*
 composer.lock
+samples/vendor/*
+samples/composer.lock
