@@ -1,0 +1,31 @@
+{
+  "name": "mjtl",
+  "version": "0.1.0",
+  "description": "Simple node.js tool to leverage the power of Mailjet Templating Language and MJML. Using Mailjet Send API and MJML API (beta).",
+  "main": "index.js",
+  "scripts": {
+    "test": "env -S `cat .credentials` mocha",
+    "start": "env -S `cat .credentials` node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.mailjet.com:gbetton/mjtl.git"
+  },
+  "keywords": [
+    "MJML",
+    "Mailjet",
+    "Templating-Language",
+    "API"
+  ],
+  "author": "grebett",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "node-mailjet": "^3.0.6",
+    "request": "^2.79.0"
+  }
+}

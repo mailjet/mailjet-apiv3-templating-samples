@@ -1,0 +1,212 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="13" color="#333333" font-family="Roboto, Helvetica, Arial, sans-serif" /> <!-- padding="0" ? -->
+      <mj-section padding="0" />
+      <mj-image padding="0" />
+      <mj-divider padding="0" />
+      <mj-class name="img-bordered" border="2px solid #eeeeee" border-radius="0"/>
+      <mj-class name="divider-simple" border-width="1px" border-style="solid" border-color="#999999" padding-top="15px" padding="0 25px 10px 25px"/>
+      <mj-class name="divider-large" border-width="3px" border-style="solid" border-color="#eeeeee" padding-top="40px" padding-bottom="20px"/>
+      <mj-class name="section-white" background-color="#ffffff" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      html, body { background-color: lightgrey; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      a { color: #333333; }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-container width="650px">
+      <!-- Logo -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-column>
+          <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="100px" alt="logo"/>
+          <mj-image src="https://s13.postimg.org/p1occe0oj/thanks.png" width="90px" alt="thanks!" padding-top="20px"/>
+        </mj-column>
+      </mj-section>
+
+      <!-- Hi and Thanks -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-column>
+          <mj-text>
+            Hi {{ var:user.name }},<br />
+            Thanks for your recent order. Please find all the details below.<br />
+            If you have any questions, feel free to <a href="mailto:contact@clothes-men.mailjet.com">contact us</a>.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Order number -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-text>
+            <strong>Order number: {{ var:order.number }}</strong>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Billing and Shipping addresses -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-text>
+            Billing Address<br />
+            {{ var:user.address.billing_address.full_name }}<br />
+            {{ var:user.address.billing_address.address_line_1 }}<br />
+            {{ var:user.address.billing_address.city }},&nbsp;
+            {{ var:user.address.billing_address.state }}&nbsp;
+            {{ var:user.address.billing_address.postal_code }}
+          </mj-text>
+        </mj-column>
+        <mj-column>
+          <mj-text>
+            Shipping Address<br />
+            {{ var:user.address.billing_address.full_name }}<br />
+            {{ var:user.address.billing_address.address_line_1 }}<br />
+            {{ var:user.address.billing_address.city }},&nbsp;
+            {{ var:user.address.billing_address.state }}&nbsp;
+            {{ var:user.address.billing_address.postal_code }}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Items -->
+      <mj-raw>
+        {% for item in var:order.items %}
+      </mj-raw>
+        <mj-section mj-class="section-white" vertical-align="middle">
+          <!-- Image -->
+          <mj-column vertical-align="middle" width="30%">
+            <mj-image
+              padding="25px"
+              align="left"
+              mj-class="img-bordered"
+              src="{{ item.image_URL }}"
+              alt="{{ item.title }}"
+              width="150px"
+            />
+          </mj-column>
+          <!-- Data -->
+          <mj-group vertical-align="middle" width="70%">
+            <mj-column>
+              <mj-text align="left">
+                <strong>{{ item.title }}</strong><br />
+                Size: {{ item.size }}<br />
+                Quantity: {{ item.quantity }}
+              </mj-text>
+            </mj-column>
+            <!-- Price -->
+            <mj-column>
+              <mj-text align="right">
+                <strong>Price: {{ item.price.currency }}{{ item.price.amount }}</strong>
+              </mj-text>
+            </mj-column>
+          </mj-group>
+        </mj-section>
+      <mj-raw>
+        {% endfor %}
+      </mj-raw>
+
+      <!-- Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Delivery date and Total amount -->
+      <mj-section mj-class="section-white">
+        <mj-column width="66%">
+          <mj-text>
+            Your estimated delivery date:<br />
+            {{ var:order.delivery_date }}
+          </mj-text>
+        </mj-column>
+        <mj-column width="34%">
+          <mj-text align="right">
+            Shipping: {{ var:order.shipping.currency }}{{ var:order.shipping.amount }}<br />
+            Tax: {{ var:order.total.currency }}{{ Round(var:order.total.amount * var:order.sales_taxes_percentage / 100, 2) }}<br />
+            Total: {{ var:order.total.currency }}{{ var:order.total.amount }}
+          </mj-text>
+          <mj-text align="right">
+            <a href="#View_Online_Receipt" target="_blank">View Online Receipt</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- You will love that Divider -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-column width="25%">
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+        <mj-column width="50%">
+            <mj-text font-size="20" padding="0px" align="center" color="#999999">
+              <span style="letter-spacing:3px">YOU WILL LOVE THAT</span>
+            </mj-text>
+        </mj-column>
+        <mj-column width="25%">
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Suggestions -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-raw>
+          {% for suggestion in var:suggestions %}
+        </mj-raw>
+        <!-- Careful with the number of suggestions! -->
+          <mj-column>
+            <mj-image
+              padding="20px"
+              mj-class="img-bordered"
+              src="{{ suggestion.image_URL }}"
+              href="{{ suggestion.link }}"
+              alt="{{ suggestion.title }}"
+            />
+          </mj-column>
+        <mj-raw>
+          {% endfor %}
+        </mj-raw>
+      </mj-section>
+
+      <!-- Footer Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-divider mj-class="divider-large" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
+        <mj-group>
+          <mj-column width="31%" vertical-align="middle">
+            <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="20px" alt="logo" align="right"/>
+          </mj-column>
+          <mj-column width="38%" vertical-align="middle">
+            <mj-text align="center" font-style="italic" padding="0">
+              <a href="clothes-men.mailjet.com/questions" target="_blank">Any question?</a>&nbsp;
+              <a href="clothes-men.mailjet.com" target="_blank" style="color: #763b26; text-decoration: none">clothes-men</a>
+              <span style="color: #763b26">&nbsp;•</span>
+            </mj-text>
+          </mj-column>
+          <mj-column width="31%" vertical-align="middle">
+            <mj-image src="https://s24.postimg.org/3m7nc9qad/twitter.png" width="25px" alt="logo" align="left"/>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>

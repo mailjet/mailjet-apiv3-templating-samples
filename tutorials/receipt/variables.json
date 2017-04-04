@@ -1,0 +1,86 @@
+{
+  "user": {
+    "name": "Matthew",
+    "gender": "male",
+    "address": {
+      "billing_address": {
+        "full_name": "Betty S. Bronson",
+        "address_line_1": "102 Duck Creek Road",
+        "city": "Palo Alto",
+        "state": "CA",
+        "postal_code": "94306"
+      },
+      "shipping_address": {
+        "full_name": "Betty S. Bronson",
+        "address_line_1": "3628 Creekside Lane",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "postal_code": "93101"
+      }
+    }
+  },
+  "order": {
+    "items": [
+      {
+        "title": "Brown shoes",
+        "image_URL": "https://s13.postimg.org/r3otqmynn/shoes.png",
+        "price": {
+          "currency": "$",
+          "separator": ".",
+          "amount": 79.99
+        },
+        "size": "9.5",
+        "quantity": 1
+      },
+      {
+        "title": "Blue T-shirt",
+        "image_URL": "https://s13.postimg.org/onn0csgkz/t_shirt.png",
+        "price": {
+          "currency": "$",
+          "separator": ".",
+          "amount": 29.99
+        },
+        "size": "S",
+        "quantity": 1
+      },
+      {
+        "title": "Pale blue shirt",
+        "image_URL": "https://s13.postimg.org/shgglxxwz/shirt.png",
+        "price": {
+          "currency": "$",
+          "amount": 24.99
+        },
+        "size": "S",
+        "quantity": 1
+      }
+    ],
+    "delivery_date": "Apr 5, 2017",
+    "sales_taxes_percentage": 0.0825,
+    "shipping": {
+      "currency": "$",
+      "amount": 10
+    },
+    "total": {
+      "currency": "$",
+      "amount": 134.97
+    },
+    "number": 123456789
+  },
+  "suggestions": [
+    {
+      "title": "light grey t-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/7gqf10uer/men1.png"
+    },
+    {
+      "title": "dark grey t-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/62ys5pv5f/men2.png"
+    },
+    {
+      "title": "brown sweat-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/51yjgle5v/men3.png"
+    }
+  ]
+}
