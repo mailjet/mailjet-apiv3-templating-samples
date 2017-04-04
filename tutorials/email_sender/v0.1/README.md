@@ -8,9 +8,9 @@ It has been built to help you test Mailjet's templating language and MJML.
 
 First of all, you will need [Node.js](https://nodejs.org/en/download/) (this tool has been tested for versions >= v7.2.1).
 
-You should have also a [Mailjet](https://www.mailjet.com/) account and a [valid API key](https://app.mailjet.com/support/what-are-the-api-key-and-secret-keys-how-should-i-use-them,109.htm). If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
+You should have also a [Mailjet](https://www.mailjet.com/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial) account and a [valid API key](https://app.mailjet.com/support/what-are-the-api-key-and-secret-keys-how-should-i-use-them,109.htm?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial). If you're not a client yet, you can [subscribe for a free account](https://app.mailjet.com/signup?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial) (and send immediately up to 6000 free emails a month!). __Warning:__ don't use a disposable email address (gmail, yahoo, etc included), as you'll be likely to be blocked by our anti-spammer policy.
 
-Finally, you'll need an access to the [MJML API](https://mjml.io/api), actually in [open beta](https://mjml.io/api).
+Finally, you'll need an access to the [MJML API](https://mjml.io/api?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial), actually in [open beta](https://mjml.io/api?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial).
 
 ## Installation
 

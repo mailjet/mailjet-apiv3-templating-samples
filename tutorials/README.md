@@ -2,7 +2,7 @@
 
 We are developers, like you. And what we hate above all in coding is to repeat ourselves. [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) isn’t just a concept for us, and we strongly recommend code reuse... So when it comes to writing email templates, we want to provide our users with the best tools to produce content in the most efficient way possible.
 
-To speed up the development of responsive emails, you may already know [MJML](https://mjml.io), the open-source email framework we’ve created. If you’re not familiar with it, [go check it out right away](https://mjml.io). You can thank us later.
+To speed up the development of responsive emails, you may already know [MJML](https://mjml.io?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial), the open-source email framework we’ve created. If you’re not familiar with it, [go check it out right away](https://mjml.io?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial). You can thank us later.
 
 But even if MJML can help you save quite a lot of time and ease the process, you’ll probably want more. We hear you.
 
@@ -16,7 +16,7 @@ It is in this kind of situations that a templating language comes in handy. OK, 
 
 ## OK. Too hard. So how can I master this, once and for all?
 
-We have the solution. Because at Mailjet we know the value of a fully integrated templating language, we created [our own](https://dev.mailjet.com/guides/#transactional-templating), following the good patterns of the libraries mentioned previously, and with our [Transactional Send API](https://dev.mailjet.com/guides/#send-transactional-email) in mind. Our idea: one template to rule them all, just with a single API call.
+We have the solution. Because at Mailjet we know the value of a fully integrated templating language, we created [our own](https://dev.mailjet.com/guides/#transactional-templating?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial), following the good patterns of the libraries mentioned previously, and with our [Transactional Send API](https://dev.mailjet.com/guides/#send-transactional-email?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial) in mind. Our idea: one template to rule them all, just with a single API call.
 
 ## Pretty awesome, we know.
 
