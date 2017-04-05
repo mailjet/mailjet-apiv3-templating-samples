@@ -6,8 +6,9 @@ From online shoe stores to indie music platforms, any company selling products o
 
 <ul>
   <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#what-will-you-achieve">What will you achieve?</a></li>
   <li>
-    <a href="#what-will-you-achieve">What will you achieve?</a>
+    <a href="#time-to-code">Time to code!</a>
     <ul>
       <li><a href="#starting-with-a-simple-header">Starting with a simple header</a></li>
       <li><a href="#be-polite-say-hi">Be polite. Say hi.</a></li>
@@ -19,7 +20,6 @@ From online shoe stores to indie music platforms, any company selling products o
       <li><a href="#because-we-saved-the-best-for-last">Because we saved the best for last</a></li>
     </ul>
   </li>
-  <li><a href="#time-to-code">Time to code!</a></li>
   <li><a href="#conclusion">Conclusion</a></li>
 </ul>
 
