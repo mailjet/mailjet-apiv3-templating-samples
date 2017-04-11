@@ -1,0 +1,59 @@
+{
+  "order": {
+    "items": [
+      {
+        "title": "Brown shoes",
+        "image_URL": "https://s13.postimg.org/r3otqmynn/shoes.png",
+        "price": {
+          "currency": "$",
+          "separator": ".",
+          "amount": 79.99
+        },
+        "size": "9.5",
+        "color": "Brown"
+      },
+      {
+        "title": "Blue T-shirt",
+        "image_URL": "https://s13.postimg.org/onn0csgkz/t_shirt.png",
+        "price": {
+          "currency": "$",
+          "separator": ".",
+          "amount": 29.99
+        },
+        "size": "S",
+        "color": "Blue"
+      },
+      {
+        "title": "Pale blue shirt",
+        "image_URL": "https://s13.postimg.org/shgglxxwz/shirt.png",
+        "price": {
+          "currency": "$",
+          "amount": 24.99
+        },
+        "size": "S",
+        "color": "Blue"
+      }
+    ],
+    "subtotal": {
+      "currency": "$",
+      "amount": 134.97
+    }
+  },
+  "suggestions": [
+    {
+      "title": "light grey t-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/7gqf10uer/men1.png"
+    },
+    {
+      "title": "dark grey t-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/62ys5pv5f/men2.png"
+    },
+    {
+      "title": "brown sweat-shirt",
+      "link": "https://clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/51yjgle5v/men3.png"
+    }
+  ]
+}

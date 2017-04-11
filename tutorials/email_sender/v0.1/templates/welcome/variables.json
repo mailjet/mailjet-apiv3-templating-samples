@@ -1,0 +1,28 @@
+{
+  "user": {
+    "name": "Matthew",
+    "gender": "male"
+  },
+  "categories": {
+    "top_left": {
+      "title": "Shoes",
+      "link": "/shoes",
+      "image_URL": "http://bit.ly/mj-tpl-tuto-shoes"
+    },
+    "top_right": {
+      "title": "Jumper",
+      "link": "/t-shirt",
+      "image_URL": "http://bit.ly/mj-tpl-lang-tuto-tshirt"
+    },
+    "bottom_left": {
+      "title": "Shirt",
+      "link": "/shirt",
+      "image_URL": "http://bit.ly/mj-tpl-lang-tuto-shirt"
+    },
+    "bottom_right": {
+      "title": "Accessories",
+      "link": "/accessories",
+      "image_URL": "http://bit.ly/mj-tpl-lang-tuto-accessories"
+    }
+  }
+}

@@ -16,7 +16,7 @@ It is in this kind of situations that a templating language comes in handy. OK, 
 
 ## OK. Too hard. So how can I master this, once and for all?
 
-We have the solution. Because at Mailjet we know the value of a fully integrated templating language, we created [our own](https://dev.mailjet.com/template-language/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial), following the good patterns of the libraries mentioned previously, and with our [Transactional Send API](https://dev.mailjet.com/guides/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#send-transactional-email) in mind. Our idea: one template to rule them all, just with a single API call.
+We have the solution. Because at Mailjet we know the value of a fully integrated templating language, we created [our own](https://dev.mailjet.com/guides/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#transactional-templating), following the good patterns of the libraries mentioned previously, and with our [Transactional Send API](https://dev.mailjet.com/guides/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#send-transactional-email) in mind. Our idea: one template to rule them all, just with a single API call.
 
 ## Pretty awesome, we know.
 
@@ -28,4 +28,4 @@ In this repository, you'll find four tutorials that will explain you step by ste
 
 Ready to start? Jump on our tutorials:
 * <a href="./receipt">How to create an e-receipt email template</a>
-* Coming soon...
+* <a href="./welcome">How to create a welcome email template</a>

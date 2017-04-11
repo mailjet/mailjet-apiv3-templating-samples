@@ -1,0 +1,199 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="13" color="#333333" font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-button border-radius="0" font-family="Roboto, Helvetica, Arial, sans-serif" text-transform="uppercase" font-size="18px" width="237px" height="49px" inner-padding="0px"/>
+      <mj-table font-family="Roboto, Helvetica, Arial, sans-serif" />
+      <mj-all padding="0" />
+      <mj-class name="img-bordered" border="2px solid #eeeeee" border-radius="0"/>
+      <mj-class name="divider-simple" border-width="1px" border-style="solid" border-color="#763b26" padding-top="15px" padding="0 150px 10px 150px"/>
+      <mj-class name="divider-large" border-width="3px" border-style="solid" border-color="#eeeeee" padding-top="40px" padding-bottom="20px"/>
+      <mj-class name="section-white" background-color="#ffffff" />
+      <mj-class name="nav-link" color="#763b26" font-size="20px" font-family="Roboto, Helvetica, Arial, sans-serif" />
+    </mj-attributes>
+    <mj-style>
+      html, body { background-color: lightgrey; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      a { color: #333333; }
+
+      table[style='background:#ffffff;border:1px solid transparent;vertical-align:middle;'] {
+        box-shadow: 0px 2px 4px #ccc;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body>
+    <mj-container width="600px">
+      <!-- Navigation bar-->
+      <mj-navbar background-color="#ffffff">
+        <mj-column width="80px" vertical-align="middle">
+          <mj-image width="40px" src="https://s27.postimg.org/u09gkrbcz/logo_small.png" padding="10px"></mj-image>
+        </mj-column>
+        <mj-column width="520px" vertical-align="middle">
+          <mj-inline-links base-url="#" align="left">
+            <mj-link href="/jackets" mj-class="nav-link" padding-right="25px" font-size="16">JACKETS</mj-link>
+            <mj-link href="/pants" mj-class="nav-link" padding-right="25px" font-size="16">PANTS</mj-link>
+            <mj-link href="/jumper" mj-class="nav-link" padding-right="25px" font-size="16">JUMPER</mj-link>
+            <mj-link href="/shirts" mj-class="nav-link" padding-right="25px" font-size="16">SHIRTS</mj-link>
+            <mj-link href="/shoes" mj-class="nav-link" padding-right="25px" font-size="16">SHOES</mj-link>
+          </mj-inline-links>
+        </mj-column>
+      </mj-navbar>
+
+      <!-- Items -->
+      <mj-section
+        padding-top="100px"
+        background-url="https://s23.postimg.org/vwq5ctlln/hero.png"
+        background-size="100% 420px"
+        background-repeat="no-repeat"
+        background-color="#ffffff">
+        <mj-section vertical-align="middle">
+          <mj-column>
+            <mj-text
+              padding="20px"
+              color="#ffffff"
+              font-family="Impact, Tahoma, Helvetica, Arial, sans-serif"
+              align="center"
+              font-size="30px"
+              line-height="30px">
+              YOU LEFT SOMETHING BEHIND
+            </mj-text>
+            <mj-text
+              padding-bottom="30px"
+              align="center"
+              font-size="18px"
+              font-family="Roboto, Helvetica, Arial, sans-serif">
+              <a href="#" style="color:#ffffff">return to your shopping bag</a>
+            </mj-text>
+          </mj-column>
+        </mj-section>
+        <!-- Card -->
+        <mj-section background-color="transparent">
+          <!-- Image -->
+          <mj-column vertical-align="middle" width="295px" background-color="#ffffff" border="1px solid transparent">
+            <!-- Item lists -->
+            <mj-table padding="24px">
+              {% for item in var:order.items %}
+                <tr>
+                  <td width="120px" style="padding-bottom:10px">
+                    <img
+                      align="left"
+                      mj-class="img-bordered"
+                      src="{{ item.image_URL }}"
+                      width="100px"
+                      style="border: 2px solid #eee"
+                    />
+                  </td>
+                  <td width="120px" style="padding-bottom:10px">
+                    <strong>{{ item.title }}</strong><br />
+                    Color: {{ item.color }}<br />
+                    Size: {{ item.size }}<br />
+                    <strong>Price: {{ item.price.currency }}{{ item.price.amount }}</strong>
+                  </td>
+                </tr>
+              {% endfor %}
+            </mj-table>
+
+            <!-- Divider -->
+            <mj-divider mj-class="divider-simple" padding="0px 24px" />
+
+            <!-- Subtotal -->
+            <mj-table font-size="18px" padding="5px 24px 10px 24px">
+              <tr><td>SUBTOTAL:</td><td style="text-align: right">{{ var:order.subtotal.currency }}{{ var:order.subtotal.amount }}</td></tr>
+            </mj-table>
+
+            <mj-button href="checkout" background-color="#2c4961" padding="10px">
+              continue checkout
+            </mj-button>
+            <mj-button href="edit" background-color="#ffffff" border="1px solid #2c4961" color="#2c4961" padding="10px 0px 30px 0px">
+              edit cart
+            </mj-button>
+          </mj-column>
+        </mj-section>
+      </mj-section>
+
+      <!-- You will love that Divider -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-column width="25%">
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+        <mj-column width="50%">
+          <mj-text font-size="20" padding="0px" align="center" color="#999999">
+          <span style="letter-spacing:3px">YOU WILL LOVE THAT</span>
+          </mj-text>
+        </mj-column>
+        <mj-column width="25%">
+            <mj-divider mj-class="divider-simple" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Suggestions -->
+      <mj-section mj-class="section-white" padding-top="30px">
+        <mj-raw>
+          {% for suggestion in var:suggestions %}
+        </mj-raw>
+        <!-- Careful with the number of suggestions! -->
+          <mj-column>
+            <mj-image
+              padding="20px"
+              mj-class="img-bordered"
+              src="{{ suggestion.image_URL }}"
+              href="{{ suggestion.link }}"
+              alt="{{ suggestion.title }}"
+            />
+          </mj-column>
+        <mj-raw>
+          {% endfor %}
+        </mj-raw>
+      </mj-section>
+
+      <!-- Social -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-social
+            border-radius="0"
+            font-family="Roboto, Helvetica, Arial, sans-serif"
+            mode="horizontal"
+            color="#763b26"
+            display="my-twitter my-instagram my-facebook"
+            my-twitter-icon-color="#ffffff"
+            my-twitter-content="TWITTER"
+            my-twitter-href="https://twitter.com/mailjetdev"
+            my-twitter-icon="https://s8.postimg.org/ecqv6badh/twitter.png"
+            my-instagram-icon-color="#ffffff"
+            my-instagram-content="INSTAGRAM"
+            my-instagram-href="https://instagram.com"
+            my-instagram-icon="https://s12.postimg.org/rgiqvmcfx/instagram.png"
+            my-facebook-icon-color="#ffffff"
+            my-facebook-content="FACEBOOK"
+            my-facebook-href="https://facebook.com"
+            inner-padding="15px"
+            my-facebook-icon="https://s1.postimg.org/i81unc3dr/facebook.png" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer Divider -->
+      <mj-section mj-class="section-white">
+        <mj-column>
+          <mj-divider mj-class="divider-large" padding="0px" />
+        </mj-column>
+      </mj-section>
+
+      <!-- Footer -->
+      <mj-section mj-class="section-white" vertical-align="middle" padding-bottom="30px">
+        <mj-group>
+          <mj-column width="30%" vertical-align="middle">
+            <mj-image src="https://s13.postimg.org/6d1pbbkdv/logo.png" width="50px" alt="logo" align="right"/>
+          </mj-column>
+          <mj-column width="70%" vertical-align="middle">
+            <mj-text align="left" padding-left="20px">
+              <span style="font-style:italic">
+                <a href="#" target="_blank">Any question?</a>&nbsp;
+                <a href="#" target="_blank" style="color: #763b26; text-decoration: none">clothes-men</a>
+              </span>
+              <span style="color: #763b26">&nbsp;• <a href="#" style="color: #763b26; text-decoration: none; font-weight: bold">Unsubscribe</a></span>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
