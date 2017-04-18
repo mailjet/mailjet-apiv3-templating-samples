@@ -1,3 +1,5 @@
+_Welcome to our templating language and MJML tutorials series. You can find all the tutorials [here](../README.md#lets-start-)_.
+
 # How to create a welcome email template
 
 Welcome emails are a powerful way to communicate with your users, because they expect to be greeted when they subscribe to your website. It is then important to welcome they warmly, and, most-of-all, personally. We can see you starting to panic: you can't write a dedicated template for each of them... Don’t freak out! In this tutorial, leveraging the power of our [templating language](http://dev.mailjet.com/template-language/reference/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial), we will show you how to create a customized welcome series from a single template.

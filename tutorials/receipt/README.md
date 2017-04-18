@@ -1,3 +1,5 @@
+_Welcome to our templating language and MJML tutorials series. You can find all the tutorials [here](../README.md#lets-start-)_.
+
 # How to create an e-receipt email template
 
 From online shoe stores to indie music platforms, any company selling products online will have to send a receipt. In this tutorial, we're going to show you how to code an e-receipt email template step by step using [MJML](https://mjml.io/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#transactional-templating) and [Mailjet's templating language](http://dev.mailjet.com/template-language/?utm_source=referrer&utm_medium=github&utm_campaign=tpl_lang_tutorial#transactional-templating).
