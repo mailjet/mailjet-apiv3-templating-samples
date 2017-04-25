@@ -1,0 +1,36 @@
+{
+  "blogposts": [
+    {
+      "title": "URBAN FASHION",
+      "content": "It’s quite clear that the phenomenon of urban style is here for decades. Just one quick pass during New York Fashion Week, and you’ll witnesses hoardes of style-setters getting snapped by photographers. But what is really urban style?",
+      "image_URL": "https://s30.postimg.org/b8xytfuo1/main1.png"
+    },
+    {
+      "title": "WEAR YOUR STYLE",
+      "content": "Mornings are the worst. Is there something more annoying than hitting the snooze button again and again, only to be forced to run all around trying to find the perfect clothes in a hurry. And that's it, you’re late.",
+      "image_URL": "https://s30.postimg.org/iq768nk75/main2.png"
+    },
+    {
+      "title": "DON'T WAIT",
+      "content": "Our fashion expert Nick Cage, left us with some very wise words yesterday that kept me thinking throughout the day today. He said \"don't wait for opportunities, create them\" and I was once again reminded that the power is all in me.",
+      "image_URL": "https://s30.postimg.org/utchw7v9d/main3.png"
+    }
+  ],
+  "suggestions": [
+    {
+      "title": "light grey t-shirt",
+      "link": "https://mailjet.clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/7gqf10uer/men1.png"
+    },
+    {
+      "title": "dark grey t-shirt",
+      "link": "https://mailjet.clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/62ys5pv5f/men2.png"
+    },
+    {
+      "title": "brown sweat-shirt",
+      "link": "https://mailjet.clothes-men.com/123456",
+      "image_URL": "https://s13.postimg.org/51yjgle5v/men3.png"
+    }
+  ]
+}

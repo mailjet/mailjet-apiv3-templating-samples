@@ -30,3 +30,4 @@ Ready to start? Jump on our tutorials:
 * <a href="./receipt">How to create an e-receipt email template</a>
 * <a href="./welcome">How to create a welcome email template</a>
 * <a href="./abandoned_cart">How to create an abandoned cart email template</a>
+* <a href="./digest">How to create a personalized digest email template</a>
