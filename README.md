@@ -4,7 +4,7 @@
 
 The samples leverage the Mailjet Templating language for Transactional Emailing. 
 
-##Documentation
+## Documentation
 
 [Full guide for Mailjet Transactional templating](http://dev.mailjet.com/guides/#transactional-templating) 
 
@@ -14,7 +14,7 @@ The Mailjet templating language offers :
  - [Loop statements](http://dev.mailjet.com/guides/#loop-statements): `for in` and `endfor`
 
 
-##List of samples
+## List of samples
 
  - [All in one transactional](all_in_one_transac/) : one template rules all your simple transactional messages. Make it easy to manage a single canvas for all your messages 
  - [Mailjet Air Electronic ticket](electronic_ticket/) : depending on the destination, the seat class and booking of a car to the airport, the layout changes and offers specific call to actions 
